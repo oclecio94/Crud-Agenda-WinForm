@@ -7,17 +7,20 @@ Este projeto é um sistema de agenda desenvolvido em C# .NET Windows Forms com S
 1. Clonar o Repositório
 
 git clone https://github.com/oclecio94/Crud-Agenda-WinForm.git
+
 cd Crud-Agenda-WinForm
 
 2. Abrir no Visual Studio
 
 Carregue a solução (Crud-Agenda-WinForm.sln).
 
-3. Configurar o Banco de Dados e instalar pacotes
+3. Instalar pacotes
 
-Executar o comando
-
+```bash
 Update-Package –reinstall
+```
+
+4. Configurar o Banco de Dados
 
 Antes de iniciar a aplicação, é necessário configurar o banco de dados SQL Server e aplicar as migrations.
 
@@ -27,11 +30,13 @@ Atualize a string de conexão no arquivo App.config caso necessário.
 
 Crie o banco de dados AgendaDB, abra o Package Manager Console no Visual Studio e execute o comando:
 
+```bash
 Update-Database
+```
 
 Isso criará automaticamente as tabelas no banco de dados.
 
-4. Compilar e Executar o Projeto
+5. Compilar e Executar o Projeto
 
 Abra o Visual Studio.
 
